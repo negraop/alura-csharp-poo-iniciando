@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "curso_01", "curso_01", "{13
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenSound", "src\curso_01\ScreenSound\ScreenSound.csproj", "{800107D6-BE2E-4F7E-8BEA-46F113492EAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosParaPraticar", "src\curso_01\ExerciciosParaPraticar\ExerciciosParaPraticar.csproj", "{AAB6D7D2-922B-4C11-B9E2-E6194D05EE96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,9 +24,14 @@ Global
 		{800107D6-BE2E-4F7E-8BEA-46F113492EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{800107D6-BE2E-4F7E-8BEA-46F113492EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{800107D6-BE2E-4F7E-8BEA-46F113492EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB6D7D2-922B-4C11-B9E2-E6194D05EE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB6D7D2-922B-4C11-B9E2-E6194D05EE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB6D7D2-922B-4C11-B9E2-E6194D05EE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB6D7D2-922B-4C11-B9E2-E6194D05EE96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{13AD3F9E-6240-40C8-A32C-3FD13276E1EA} = {8F60B9B9-6B84-406F-A530-A8BB338192E2}
 		{800107D6-BE2E-4F7E-8BEA-46F113492EAD} = {13AD3F9E-6240-40C8-A32C-3FD13276E1EA}
+		{AAB6D7D2-922B-4C11-B9E2-E6194D05EE96} = {13AD3F9E-6240-40C8-A32C-3FD13276E1EA}
 	EndGlobalSection
 EndGlobal
