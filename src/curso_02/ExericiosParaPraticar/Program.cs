@@ -1,8 +1,8 @@
 ﻿ContaBancaria conta = new ContaBancaria();
-conta.idConta = 185759;
-conta.titular = "Pedro";
-conta.senha = 1234;
-conta.saldo = 100000;
+conta.IdConta = 185759;
+conta.Titular = "Pedro";
+conta.Senha = 1234;
+conta.Saldo = 100000;
 
 conta.ExibirInformacoes();
 
@@ -10,10 +10,10 @@ Console.WriteLine("\n****************\n");
 
 Carro carro = new Carro
 {
-    fabricante = "GM",
-    modelo = "Onix",
-    ano = 2024,
-    quantidadePortas = 4
+    Fabricante = "GM",
+    Modelo = "Onix",
+    Ano = 2024,
+    QuantidadePortas = 4
 };
 
 carro.Acelerar();
@@ -25,3 +25,15 @@ carro.Frear();
 carro.Frear();
 carro.ExibirInformacoes();
 carro.Buzinar();
+
+Console.WriteLine("\n****************\n");
+
+Produto produto = new Produto
+{
+    Nome = "Colírio",
+    Marca = "SeeCorp",
+    Preco = 10.75f,
+    Estoque = 13
+};
+
+Console.WriteLine(produto.DescricaoDetalhada);

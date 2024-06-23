@@ -1,14 +1,14 @@
 class ContaBancaria
 {
-    public string? titular { get; set; }
-    public int idConta { get; set; }
-    public int senha { get; set; }
-    public float saldo { get; set; }
+    public string? Titular { get; set; }
+    public int IdConta { get; set; }
+    public int Senha { get; set; }
+    public float Saldo { get; set; }
 
     public void ExibirInformacoes()
     {
         Console.WriteLine("INFORMAÇÕES DA CONTA");
-        Console.WriteLine($"Titular: {titular}");
-        Console.WriteLine($"Saldo: {saldo}");
+        Console.WriteLine($"Titular: {Titular}");
+        Console.WriteLine($"Saldo: {Saldo}");
     }
 }
