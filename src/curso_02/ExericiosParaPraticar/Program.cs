@@ -40,23 +40,15 @@ Console.WriteLine(produto.Descricao);
 
 Console.WriteLine("\n****************\n");
 
-Titular t = new();
-Conta c = new();
+Titular titular = new Titular("George Harrison", "000.000.000-00", "Rua dos Besouros, Liverpool");
+Conta c = new Conta(titular, 1, 2234, 100000);
 
-t.Nome = "George Harrison";
-t.Cpf = "000.000.000-00";
-t.Endereco = "Rua dos Besouros - Liverpool";
-
-c.Titular = t;
-c.Agencia = 1;
-c.NumeroDaConta = 2234;
-c.Saldo = 10000000.0;
-c.Limite = 100000.0;
+Console.WriteLine(c.Informacoes);
 
 Console.WriteLine("Informações do Titular: ");
-Console.WriteLine($"Nome: {c.Titular.Nome}");
-Console.WriteLine($"CPF: {c.Titular.Cpf}");
-Console.WriteLine($"Endereco: {c.Titular.Endereco}");
+Console.WriteLine($"Nome: {c.Titular?.Nome}");
+Console.WriteLine($"CPF: {c.Titular?.Cpf}");
+Console.WriteLine($"Endereco: {c.Titular?.Endereco}");
 
 
 Console.WriteLine("\n****************\n");
