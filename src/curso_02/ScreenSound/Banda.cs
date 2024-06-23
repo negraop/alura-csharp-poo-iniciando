@@ -1,7 +1,12 @@
 ﻿class Banda
 {
     private List<Album> albuns = new List<Album>();
-    public string? Nome { get; set; }
+    public string? Nome { get; }
+
+    public Banda(string nome)
+    {
+        Nome = nome;
+    }
 
     public void AdicionarAlbum(Album album)
     {
