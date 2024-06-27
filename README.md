@@ -7,6 +7,9 @@
 ### **Link do projeto: [aqui vem a url do projeto](https://alura-logica-js.vercel.app/)**
 <br>
 
+Link dos Exercicios da Alura: [link](https://github.com/ArthurOcFernandes/Exerc-cios-C-/tree/curso-3-aula-3)
+<br>
+
 Este repositório contempla todos os cursos contidos na Formação: *Aprenda a programar em C# com Orientação a Objetos*.
 
 A formação é separada em 4 cursos:
