@@ -8,10 +8,15 @@ using (HttpClient client = new HttpClient())
     {
         string resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
         var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta)!;
+        // foreach(var musica in musicas)
+        // {
+        //     musica.ExibirDetalhesDaMusica();
+        // }
         // LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
         // LinqFilter.ExibirListaDeArtistasOrdenados(musicas);
         // LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
-        LinqFilter.FiltrarMusicasDeUmArtista(musicas, "U2");
+        // LinqFilter.FiltrarMusicasDeUmArtista(musicas, "U2");
+        LinqFilter.FiltrarMusicasEmCSharp(musicas);
 
 
         // var musicasPreferidasDoPedro = new MusicasPreferidas("Pedro");
@@ -23,16 +28,16 @@ using (HttpClient client = new HttpClient())
 
         // musicasPreferidasDoPedro.ExibirMusicasFavoritas();
 
-        var musicasPreferidasDaMaria = new MusicasPreferidas("Maria");
-        musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[100]);
-        musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[350]);
-        musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[40]);
-        musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[60]);
-        musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[727]);
+        // var musicasPreferidasDaMaria = new MusicasPreferidas("Maria");
+        // musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[100]);
+        // musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[350]);
+        // musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[40]);
+        // musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[60]);
+        // musicasPreferidasDaMaria.AdicionarMusicaFavorita(musicas[727]);
 
-        musicasPreferidasDaMaria.ExibirMusicasFavoritas();
+        // musicasPreferidasDaMaria.ExibirMusicasFavoritas();
 
-        musicasPreferidasDaMaria.GerarArquivoJson();
+        // musicasPreferidasDaMaria.GerarArquivoJson();
 
     }
     catch(Exception ex)
